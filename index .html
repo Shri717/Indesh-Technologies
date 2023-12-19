@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .company-info {
+            margin-bottom: 20px;
+        }
+
+        .company-info h2 {
+            color: #333;
+        }
+
+        .company-info p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Indesh Technologies 🙏 </h1>
+        <nav>
+            <ul>
+                <li><a href="index .html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="portfoilo.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="IT 1.jpg" alt="Image 6"></div>
+          <div class="slide"><img src="IT 2.jpg" alt="Image 7"></div>
+          <div class="slide"><img src="D1.png" alt="Image 1"></div>
+          <div class="slide"><img src="DESH INSTITUTE.png" alt="Image 2"></div>
+          <div class="slide"><img src="INDESH AHMEDABAD.png" alt="Image 3"></div>
+          <div class="slide"><img src="INDESH TECHNOLOGIES NETWORK MARKET.png" alt="Image 4"></div>
+          <div class="slide"><img src="TRIANGLE.png" alt="Image 5"></div>
+          <!-- Add more slides as needed -->
+        </div>
+        <script>
+            let slideIndex = 0;
+          
+            function changeSlide(n) {
+              showSlides((slideIndex += n));
+            }
+          
+            function showSlides(n) {
+              const slides = document.querySelectorAll('.slide');
+              if (n >= slides.length) {
+                slideIndex = 0;
+              } else if (n < 0) {
+                slideIndex = slides.length - 1;
+              }
+          
+              slides.forEach((slide) => {
+                slide.style.display = 'none';
+              });
+          
+              slides[slideIndex].style.display = 'block';
+            }
+          </script>
+        <button class="prev" onclick="changeSlide(-1)">Previous</button>
+        <button class="next" onclick="changeSlide(1)">Next</button>
+      </div>
+      
+    <div class="container">
+        <h2>Empowering Digital Excellence in Gujarat</h2>
+        <p>Indesh Technologies is a pioneering tech company based in the vibrant state of Gujarat, committed to delivering cutting-edge digital solutions. With a rich portfolio of services, we cater to diverse technological needs, ensuring our clients stay ahead in the rapidly evolving digital landscape.</p>
+
+        <h3>Our Core Services Include:</h3>
+        <div class="services">
+            <ul>
+                <li>Custom Website Development</li>
+                <li>Web Application Development</li>
+                <li>E-commerce Solutions</li>
+                <li>Responsive Web Design</li>
+                <li>Content Management Systems (CMS)</li>
+                <li>UI/UX Design</li>
+                <li>Website Maintenance and Support</li>
+                <li>Android Application Development</li>
+                <li>Android Application Maintenance and Support</li>
+                <li>Video Editing</li>
+                <li>Animation Video Development</li>
+            </ul>
+        </div>
+
+        <p>Located in the heart of Gujarat, Indesh Technologies embraces innovation, creativity, and reliability. Our team of skilled professionals is dedicated to delivering excellence, leveraging the latest tools and technologies to meet and exceed client expectations.</p>
+
+        <p>At Indesh Technologies, we are enablers of digital transformation, empowering businesses to thrive in an ever-evolving digital era. Partner with us to embark on a journey of technological innovation and success.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Indesh Technologies. All rights reserved.</p>
+    </footer>
+            <footer>
+                        <p>&copy; 2023 Web Development Company. All rights reserved.</p>
+                    </footer>
+                </body>                    
+                </html>
